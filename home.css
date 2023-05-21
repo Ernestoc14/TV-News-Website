@@ -77,17 +77,18 @@ section{
     margin-top: 0;
   }
 
-footer{
-    position: absolute;
+  footer{
     width: 146px;
     height: 66px;
     left: 39px;
-    top: 857px;
-    
+    top: 360px;
+    position: relative;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 20px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
 
-    }
+.footer-notext{
+    text-decoration: none;
+}
