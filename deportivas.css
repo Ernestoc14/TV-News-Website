@@ -1,13 +1,16 @@
+/* CSS Universal */
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
 }
-
+/* CSS del Body */
 body{
     background-color: #c39797;
     color: #ffffff;
 }
+/* CSS del Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,7 +26,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 7px 3%;
+    padding: 20px 3%;
     background: transparent;
 }
 /* para los links del navbar */
@@ -34,56 +37,66 @@ nav a:visited{
 nav a:link{
     text-decoration: none;
     color: black;
-
 }
 
 nav a:visited{
     color: #0000;
 }
 
+/* CSS del titulo de Seccion de Deportes */
+/* hacemos que sea elemento de bloque con Display Block
+y asi que ocupe todo su espacio */
 .sports-section-title{
     display: block;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2.4rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Styling video section */
 .section-video-container{
-    margin-top: 175px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
 }
-
+/* CSS para el div que contiene los elementos de cada video */
+.individual-video-container{
+    width: 300px;
+    height: 400px;
+}
+/* CSS para cada video */
 .video-sports{
-    width: 550px;
-    height: 310px;
+    width: 300px;
+    height: 170px;
     box-shadow: rgba(0, 0, 0, 0.4 ) 0px 4px 12px;
 }
-
+/* CSS del titulo de Cada Video */
 .video-title{
     margin-top: 15px;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
-
+/* CSS para el Parrafo de Cada Video */
 .video-paragraph{
     margin-top: 5px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    max-width: 460px;
+    font-weight: 400;
+    max-width: 350px;
 }
-
+/* CSS del Footer */
 footer{
     width: 146px;
     height: 66px;
-    left: 39px;
-    top: 360px;
+    left: 30px;
+    top: 15px;
     position: relative;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 500;
 }
-
+/* CSS de la lista de Links en el Footer */
+/* Flex paara que los elementos se coloquen uno al aldo del otro */
+/* flex direction column para que se coloquen uno debajo del otro */
 .footer-notext{
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
 }
